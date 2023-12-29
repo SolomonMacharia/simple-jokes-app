@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# JOKES
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project involves:
 
-Currently, two official plugins are available:
+- A simple GraphQL server that wraps around the Chuck Norris Jokes API.
+- A simple React client that consumes the GraphQL server.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-## Expanding the ESLint configuration
+The GraphQL server is a simple Node.js server that wraps around the Jokes API. It exposes a single endpoint that returns a random joke.
+The server is written in TypeScript and uses the Apollo Server library.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+### Dependencies
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+* Node.js - Tested on the LTS version (20.10.0)
+
+### Installing
+
+To install the dependencies, run the following command in the root directory of the project:
+```
+cd server && npm ci
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Executing program
+To start the server, run the following command in the root directory of the project:
+```
+cd server/src && npm run start
+```
