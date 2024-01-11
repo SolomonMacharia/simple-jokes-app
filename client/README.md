@@ -1,30 +1,10 @@
-# JOKES
+# Jokes App
 
-This project involves:
-
-- A simple GraphQL server that wraps around the Chuck Norris Jokes API.
-- A simple React client that consumes the GraphQL server.
-
-## Description
-
-The GraphQL server is a simple Node.js server that wraps around the Jokes API. It exposes a single endpoint that returns a random joke.
-The server is written in TypeScript and uses the Apollo Server library.
+This is a simple app that displays a list of jokes. It consumes from a GraphQL API whose source can be found in the `server` directory.
 
 ## Getting Started
 
-### Dependencies
-
-* Node.js - Tested on the LTS version (20.10.0)
-
-### Installing
-
-To install the dependencies, run the following command in the root directory of the project:
-```
-cd server && npm ci
-```
-
-### Executing program
-To start the server, run the following command in the root directory of the project:
-```
-cd server/src && npm run start
-```
+1. Clone this repository
+2. Run `npm install` to install dependencies in both the `/server` and `/client` directories
+3. Run `npm start` in the `/server` directory to start the server
+4. Run `npm run dev` in the `/client` directory to start the client
